@@ -1,11 +1,14 @@
-package com.diary.d4jh;
+package com.diary.d4jh.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
 import org.springframework.web.servlet.config.annotation.*;
 
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {
+
+
 
 //    @Override
 //    public void addViewControllers(ViewControllerRegistry registry) {

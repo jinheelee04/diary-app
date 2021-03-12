@@ -12,12 +12,20 @@ public class PrincipalDetails implements UserDetails {
     private User user;
 
     public PrincipalDetails(User user) {
+        super();
         this.user = user;
     }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        Collection<GrantedAuthority> collect = new ArrayList<>();
+        collect.add(new GrantedAuthority() {
+            @Override
+            public String getAuthority() {
+                return "ROLE_USER";
+            }
+        });
+        return collect;
     }
 
     @Override

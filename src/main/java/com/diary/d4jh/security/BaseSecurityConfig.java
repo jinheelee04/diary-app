@@ -12,6 +12,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 
@@ -46,19 +47,30 @@ public class BaseSecurityConfig extends WebSecurityConfigurerAdapter {
     }
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf() .disable() .authorizeRequests()
-                // user 페이지 설정
-                .antMatchers("/user/**")
-                .authenticated() // 로그인 필요
-                // 기타 url은 모두 허용
-                .anyRequest()
-                .permitAll()
+
+        String[] permittedUrls = {  "/login", "/join"};
+
+        http.csrf().csrfTokenRepository(new CookieCsrfTokenRepository());
+        http.authorizeRequests()
+                .antMatchers(permittedUrls).permitAll() //인증을 걸지 않는 엔드포인트를 명확히 지정
+                .anyRequest().authenticated()
+//                // user 페이지 설정
+//                .antMatchers("/user/**")
+//                .authenticated() // 로그인 필요
+//                // 기타 url은 모두 허용
+//                .anyRequest()
+//                .permitAll()
                 .and()
                 // 로그인 페이지 사용
                 .formLogin()
                 .loginPage("/login") // 로그인 페이지 경로 설정
-                .loginProcessingUrl("/loginProc") // 로그인이 실제 이루어지는 곳
-                .defaultSuccessUrl("/index"); // 로그인 성공 후 기본적으로 리다이렉트되는 경로
+                .loginProcessingUrl("/authenticate") // 로그인이 실제 이루어지는 곳 //필터체인에서 인지하고 있다가 시큐리티가 낚아채서 Authentication Manager
+                .defaultSuccessUrl("/user/index") // 로그인 성공 후 기본적으로 리다이렉트되는 경로
+                .and()
+                .logout()
+                .permitAll()
+                .logoutUrl("/logout")
+                .logoutSuccessUrl("/login");
     }
 
 

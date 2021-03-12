@@ -10,6 +10,7 @@ import org.springframework.security.web.server.csrf.CsrfToken;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @RequiredArgsConstructor
@@ -25,13 +26,13 @@ public class LoginController {
 //    public String main(){
 //        return "index";
 //    }
-    @GetMapping("/index")
-    public String index()
-    { return "index"; }
+    @GetMapping("/user/index")
+    public String index() {
+        return "index";
+    }
 
     @GetMapping("/login")
-    public String login(CsrfToken csrfToken, Model model){
-        model.addAttribute("_csrf", csrfToken.getToken());
+    public String login(){
         return "login";
     }
 
@@ -42,10 +43,13 @@ public class LoginController {
 
     @PostMapping("/join")
     public String join(User user) {
-
         user.setPwd(passwordEncoder.encode(user.getPwd()));
         userService.save(user);
         return "redirect:/login";
     }
 
+//    @PostMapping("/authenticate")
+//    public String loginSuccess(){
+//        return "redirect:/index";
+//    }
 }

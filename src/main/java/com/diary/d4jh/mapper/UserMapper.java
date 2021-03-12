@@ -9,5 +9,5 @@ import java.util.Optional;
 public interface UserMapper {
     public void insertUser(User user);
 
-    Optional<User> findByEmail(String email);
+    User findByEmail(String email);
 }

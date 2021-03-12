@@ -16,7 +16,7 @@
         NOW());
     </insert>
 
-    <select id="findByEmail" >
+    <select id="findByEmail" resultType="user">
         SELECT *
         FROM T_USER_INFO
         WHERE email = #{email}
