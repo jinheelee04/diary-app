@@ -1,0 +1,6 @@
+
+sql:
+  user:
+    insertUser: |
+      insert into
+

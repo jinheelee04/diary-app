@@ -1,0 +1,50 @@
+
+
+server:
+  port: 8080
+  tomcat:
+    max-connections: 10000
+    max-threads: 16
+    min-spare-threads: 4
+
+spring:
+#  main:
+#    banner-mode: off
+  mustache:
+    expose-request-attributes: true
+  datasource:
+    url: jdbc:mariadb://d2pro-springboot2-webservice.clvnqyw48nyo.ap-northeast-2.rds.amazonaws.com:3306/d4jh_db
+    username: d2pro
+    password: 2pro123qwe
+#    username: dj4h
+#    password: d4jh.123qwe
+    driver-class-name: org.mariadb.jdbc.Driver
+    connection-timeout-ms: 10000
+    maximum-pool-size: 10
+    pool-name: db-pool
+    fetch-size: 100000
+  devtools:
+    livereload:
+      enabled: true
+#  mustache:
+#    cache: false
+
+mybatis:
+  #config-location: classpath:config/mybatis.xml mapper를 그냥 설정하면 필요없음
+  # package name + , + pakage name 으로 진행가능
+  type-aliases-package: com.diary.d4jh.domain
+  mapper-locations: classpath:**/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+
+
+##profiles
+#spring:
+#  profiles: local
+#  datasource:
+#    url: jdbc:mariadb://d2pro-springboot2-webservice.clvnqyw48nyo.ap-northeast-2.rds.amazonaws.com:3306/d4jh
+#    username: dj4h
+#    password: d4jh.123qwe
+#    driver-class-name: org.mariadb.jdbc.Driver
