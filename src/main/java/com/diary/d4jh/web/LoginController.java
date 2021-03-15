@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.security.Principal;
+
 @RequiredArgsConstructor
 @Controller
 @Slf4j
@@ -28,6 +30,7 @@ public class LoginController {
 //    }
     @GetMapping("/user/index")
     public String index() {
+
         return "index";
     }
 

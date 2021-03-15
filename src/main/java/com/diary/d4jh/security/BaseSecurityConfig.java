@@ -54,12 +54,6 @@ public class BaseSecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .antMatchers(permittedUrls).permitAll() //인증을 걸지 않는 엔드포인트를 명확히 지정
                 .anyRequest().authenticated()
-//                // user 페이지 설정
-//                .antMatchers("/user/**")
-//                .authenticated() // 로그인 필요
-//                // 기타 url은 모두 허용
-//                .anyRequest()
-//                .permitAll()
                 .and()
                 // 로그인 페이지 사용
                 .formLogin()

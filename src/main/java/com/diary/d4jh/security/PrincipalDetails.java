@@ -35,7 +35,7 @@ public class PrincipalDetails implements UserDetails {
 
     @Override
     public String getUsername() {
-        return user.getEmail();
+        return Integer.toString(user.getUserId());
     }
 
     @Override
