@@ -1,6 +1,7 @@
 package com.diary.d4jh.web;
 
 import com.diary.d4jh.domain.user.User;
+import com.diary.d4jh.service.DiaryService;
 import com.diary.d4jh.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -19,7 +20,7 @@ import java.security.Principal;
 @Controller
 @Slf4j
 public class LoginController {
-
+    private final DiaryService diaryService;
     private final UserService userService;
     @Autowired
     private BCryptPasswordEncoder passwordEncoder;
@@ -28,9 +29,10 @@ public class LoginController {
 //    public String main(){
 //        return "index";
 //    }
-    @GetMapping("/user/index")
-    public String index() {
-
+    @GetMapping({"/user/index","/"})
+    public String index(Model model, Principal principal) {
+        int userId= Integer.parseInt(principal.getName());
+        model.addAttribute("diaryList", diaryService.findAllUserDiary(userId) );
         return "index";
     }
 

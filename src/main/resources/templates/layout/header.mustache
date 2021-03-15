@@ -56,10 +56,10 @@ var header = $("meta[name='_csrf_header']").attr("content");
             {{>modals/diary-create}}
             <div class="project-title">다이어리</div>
             <div class="project-name">
-                <div class="project-department">Marketing</div>
-                <div class="project-department">Design</div>
-                <div class="project-department">Development</div>
-                <div class="project-department">Management</div>
+                {{#diaryList}}
+                <div class="project-department">{{diaryNm}}</div>
+                    <input type="hidden" class="diaryId" value="{{diaryId}}">
+                {{/diaryList}}
             </div>
         </div>
 

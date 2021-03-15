@@ -1,6 +1,6 @@
 $(function(){
 
-    if(!$('input[name="prvtYn"]').is("checked")){
+    if(!$("#input-chk-prvt").is("checked")){
         console.log("요기기");
        $("div.add-members").show();
         $(this).val("N");

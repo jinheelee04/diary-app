@@ -17,5 +17,9 @@
         NOW(),
         NOW());
     </insert>
-
+    <select id="findAllDiary" resultType="diary">
+        SELECT *
+        FROM T_DIARY
+        WHERE user_id = #{userId}
+    </select>
 </mapper>
