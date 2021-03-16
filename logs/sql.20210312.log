@@ -1,0 +1,85 @@
+2021-03-12 09:49:29,802 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.insertUser                    :137 ] ==>  Preparing: INSERT INTO T_USER_INFO ( name , email, pwd, join_dt ) VALUES ( ?, ?, ?, NOW());
+2021-03-12 09:49:29,834 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.insertUser                    :137 ] ==> Parameters: ¿Ã¡¯»Ò(String), 2pro.jlee@gmail.com(String), $2a$10$M1zIiJpyEd12Lh5DPZaKaeNBqk5Xf1iK8WBHfwwRUcPp5caKyIg6S(String)
+2021-03-12 09:49:29,840 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.insertUser                    :137 ] <==    Updates: 1
+2021-03-12 09:58:44,329 DEBUG [http-nio-8080-exec-1] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 09:58:44,343 DEBUG [http-nio-8080-exec-1] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: 2pro.jlee@gmail.com(String)
+2021-03-12 09:59:44,624 DEBUG [http-nio-8080-exec-3] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 09:59:44,637 DEBUG [http-nio-8080-exec-3] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: 2pro.jlee@gmail.com(String)
+2021-03-12 10:11:54,051 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 10:11:54,073 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: 2pro.jlee@gmail.com(String)
+2021-03-12 10:11:54,109 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 2
+2021-03-12 10:13:25,053 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 10:13:25,072 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: 2pro.jlee@gmail.com(String)
+2021-03-12 10:13:25,101 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 10:24:07,024 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 10:24:07,041 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: 2pro.jlee@gmail.com(String)
+2021-03-12 10:24:07,072 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 10:42:03,192 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 10:42:03,208 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: 2pro.jlee@gmail.com(String)
+2021-03-12 10:42:03,232 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 10:42:22,752 DEBUG [http-nio-8080-exec-1] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 10:42:22,753 DEBUG [http-nio-8080-exec-1] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: 2pro.jlee@gmail.co(String)
+2021-03-12 10:42:22,758 DEBUG [http-nio-8080-exec-1] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 0
+2021-03-12 10:43:16,398 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 10:43:16,399 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: 2pro.jle@gmail.com(String)
+2021-03-12 10:43:16,403 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 0
+2021-03-12 10:43:27,440 DEBUG [http-nio-8080-exec-7] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 10:43:27,441 DEBUG [http-nio-8080-exec-7] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: 2pro.jlee@gmail.com(String)
+2021-03-12 10:43:27,446 DEBUG [http-nio-8080-exec-7] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 10:43:32,686 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 10:43:32,687 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: 2pro.jlee@gmail.com(String)
+2021-03-12 10:43:32,692 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 10:49:07,236 DEBUG [http-nio-8080-exec-8] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 10:49:07,237 DEBUG [http-nio-8080-exec-8] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: 2pro.jle@gmail.com(String)
+2021-03-12 10:49:07,244 DEBUG [http-nio-8080-exec-8] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 0
+2021-03-12 10:49:32,012 DEBUG [http-nio-8080-exec-8] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 10:49:32,013 DEBUG [http-nio-8080-exec-8] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: 2pro.jlee@gmail.com(String)
+2021-03-12 10:49:32,016 DEBUG [http-nio-8080-exec-8] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 11:05:39,238 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.insertUser                    :137 ] ==>  Preparing: INSERT INTO T_USER_INFO ( name , email, pwd, join_dt ) VALUES ( ?, ?, ?, NOW());
+2021-03-12 11:05:39,254 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.insertUser                    :137 ] ==> Parameters: test(String), test@gmail.com(String), $2a$10$.7KnAuhZL9k8stAg0NqE7OGheZKq1eJH9Tq2rmOMep/ZtVl/iV62W(String)
+2021-03-12 11:05:39,260 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.insertUser                    :137 ] <==    Updates: 1
+2021-03-12 11:05:51,854 DEBUG [http-nio-8080-exec-4] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 11:05:51,855 DEBUG [http-nio-8080-exec-4] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: test@gmail.com(String)
+2021-03-12 11:05:51,875 DEBUG [http-nio-8080-exec-4] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 11:09:39,105 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 11:09:39,127 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: test@gmail.com(String)
+2021-03-12 11:09:39,161 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 11:10:52,409 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 11:10:52,410 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: 2pro.jlee@gmail.com(String)
+2021-03-12 11:10:52,418 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 11:11:22,020 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 11:11:22,037 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: 2pro.jlee@gmail.com(String)
+2021-03-12 11:11:22,064 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 11:13:49,538 DEBUG [http-nio-8080-exec-3] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 11:13:49,559 DEBUG [http-nio-8080-exec-3] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: 2pro.jlee@gmail.com(String)
+2021-03-12 11:13:49,592 DEBUG [http-nio-8080-exec-3] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 11:18:16,142 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 11:18:16,161 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: test@gmail.com(String)
+2021-03-12 11:18:16,185 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 11:18:31,397 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 11:18:31,399 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: test@gmail.com(String)
+2021-03-12 11:18:31,409 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 11:18:41,369 DEBUG [http-nio-8080-exec-3] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 11:18:41,370 DEBUG [http-nio-8080-exec-3] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: test@gmail.com(String)
+2021-03-12 11:18:41,375 DEBUG [http-nio-8080-exec-3] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 11:23:28,134 DEBUG [http-nio-8080-exec-7] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 11:23:28,151 DEBUG [http-nio-8080-exec-7] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: test@gmail.com(String)
+2021-03-12 11:23:28,174 DEBUG [http-nio-8080-exec-7] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 11:24:20,584 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 11:24:20,585 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: 2pro.jlee@gmail.com(String)
+2021-03-12 11:24:20,591 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 11:25:15,791 DEBUG [http-nio-8080-exec-3] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 11:25:15,792 DEBUG [http-nio-8080-exec-3] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: test@gmail.com(String)
+2021-03-12 11:25:15,799 DEBUG [http-nio-8080-exec-3] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 11:25:44,890 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 11:25:44,909 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: test@gmail.com(String)
+2021-03-12 11:25:44,937 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 11:25:56,736 DEBUG [http-nio-8080-exec-4] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 11:25:56,737 DEBUG [http-nio-8080-exec-4] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: test@gmail.com(String)
+2021-03-12 11:25:56,744 DEBUG [http-nio-8080-exec-4] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 11:26:03,969 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 11:26:03,970 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: test@gmail.com(String)
+2021-03-12 11:26:03,975 DEBUG [http-nio-8080-exec-5] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1
+2021-03-12 11:34:32,315 DEBUG [http-nio-8080-exec-9] [c.d.d.m.U.findByEmail                   :137 ] ==>  Preparing: SELECT * FROM T_USER_INFO WHERE email = ?
+2021-03-12 11:34:32,316 DEBUG [http-nio-8080-exec-9] [c.d.d.m.U.findByEmail                   :137 ] ==> Parameters: 2pro.jlee@gmail.com(String)
+2021-03-12 11:34:32,322 DEBUG [http-nio-8080-exec-9] [c.d.d.m.U.findByEmail                   :137 ] <==      Total: 1

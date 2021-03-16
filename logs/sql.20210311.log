@@ -1,0 +1,23 @@
+2021-03-11 16:26:48,355 DEBUG [http-nio-8080-exec-1] [c.d.d.m.U.insertUser                    :137 ] ==>  Preparing: INSERT INTO T_USER_INFO ( name , email, pwd, join_dt ) VALUES ( ?, ?, ?, NOW());
+2021-03-11 16:26:48,376 DEBUG [http-nio-8080-exec-1] [c.d.d.m.U.insertUser                    :137 ] ==> Parameters: ¿Ã¡¯»Ò(String), 2pro.jlee@gmail.com(String), 1234(String)
+2021-03-11 16:29:06,874 DEBUG [http-nio-8080-exec-8] [c.d.d.m.U.insertUser                    :137 ] ==>  Preparing: INSERT INTO T_USER_INFO ( name , email, pwd, join_dt ) VALUES ( ?, ?, ?, NOW());
+2021-03-11 16:29:06,875 DEBUG [http-nio-8080-exec-8] [c.d.d.m.U.insertUser                    :137 ] ==> Parameters: ¿Ã¡¯»Ò(String), 2pro.jlee@gmail.com(String), 1234(String)
+2021-03-11 16:29:06,886 DEBUG [http-nio-8080-exec-8] [c.d.d.m.U.insertUser                    :137 ] <==    Updates: 1
+2021-03-11 16:45:07,031 DEBUG [http-nio-8080-exec-7] [c.d.d.m.U.insertUser                    :137 ] ==>  Preparing: INSERT INTO T_USER_INFO ( name , email, pwd, join_dt ) VALUES ( ?, ?, ?, NOW());
+2021-03-11 16:45:07,049 DEBUG [http-nio-8080-exec-7] [c.d.d.m.U.insertUser                    :137 ] ==> Parameters: ¿Ã¡¯»Ò(String), 2pro.jlee@gmail.com(String), $2a$10$5BVOUakmaJVpZwExlDJdbusP7QkO4/0/etnlG7ynrl0isfm1rAQjy(String)
+2021-03-11 16:45:38,232 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.insertUser                    :137 ] ==>  Preparing: INSERT INTO T_USER_INFO ( name , email, pwd, join_dt ) VALUES ( ?, ?, ?, NOW());
+2021-03-11 16:45:38,232 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.insertUser                    :137 ] ==> Parameters: ¿Ã¡¯»Ò(String), 2pro.jlee@gmail.com(String), $2a$10$5aeT/cbXPoON2nlT4wPMLORs8yEdd0K8.p6UKii4XnAuT6.gkD3NK(String)
+2021-03-11 16:45:50,719 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.insertUser                    :137 ] ==>  Preparing: INSERT INTO T_USER_INFO ( name , email, pwd, join_dt ) VALUES ( ?, ?, ?, NOW());
+2021-03-11 16:45:50,720 DEBUG [http-nio-8080-exec-6] [c.d.d.m.U.insertUser                    :137 ] ==> Parameters: ¿Ã¡¯»Ò(String), test@gmail.com(String), $2a$10$RFcd2Z7FgDStCF5KMzrZZ.Z.FHn0AmsIXJ1odegSPczgsR7afcnh.(String)
+2021-03-11 16:47:53,348 DEBUG [http-nio-8080-exec-7] [c.d.d.m.U.insertUser                    :137 ] ==>  Preparing: INSERT INTO T_USER_INFO ( name , email, pwd, join_dt ) VALUES ( ?, ?, ?, NOW());
+2021-03-11 16:47:53,349 DEBUG [http-nio-8080-exec-7] [c.d.d.m.U.insertUser                    :137 ] ==> Parameters: ¿Ã¡¯»Ò(String), test@gmail.com(String), $2a$10$FL3g245ZTtqWS0lqtNs0XutZjmzMCe4UDX19o0csR0Kwvo6TdVlgO(String)
+2021-03-11 16:47:53,352 DEBUG [http-nio-8080-exec-7] [c.d.d.m.U.insertUser                    :137 ] <==    Updates: 1
+2021-03-11 16:49:16,557 DEBUG [http-nio-8080-exec-8] [c.d.d.m.U.insertUser                    :137 ] ==>  Preparing: INSERT INTO T_USER_INFO ( name , email, pwd, join_dt ) VALUES ( ?, ?, ?, NOW());
+2021-03-11 16:49:16,557 DEBUG [http-nio-8080-exec-8] [c.d.d.m.U.insertUser                    :137 ] ==> Parameters: ¿Ã¡¯»Ò(String), 2pro.jlee@gmail.com(String), $2a$10$om5kvT3dzfzQpuJMFww7Geitu9hqdzxRPuGZt0IN9nt1exqNDPWR6(String)
+2021-03-11 16:49:16,561 DEBUG [http-nio-8080-exec-8] [c.d.d.m.U.insertUser                    :137 ] <==    Updates: 1
+2021-03-11 16:49:36,716 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.insertUser                    :137 ] ==>  Preparing: INSERT INTO T_USER_INFO ( name , email, pwd, join_dt ) VALUES ( ?, ?, ?, NOW());
+2021-03-11 16:49:36,717 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.insertUser                    :137 ] ==> Parameters: test(String), jlee04@hubilon.com(String), $2a$10$sG6ypGQb44awi6eDYyE.o.ScKf6MexB6dwezBiMyBQ1t0k/sB2QkK(String)
+2021-03-11 16:49:36,720 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.insertUser                    :137 ] <==    Updates: 1
+2021-03-11 16:50:50,984 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.insertUser                    :137 ] ==>  Preparing: INSERT INTO T_USER_INFO ( name , email, pwd, join_dt ) VALUES ( ?, ?, ?, NOW());
+2021-03-11 16:50:51,008 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.insertUser                    :137 ] ==> Parameters: ¿Ã¡¯»Ò(String), lee_jh0407@naver.com(String), $2a$10$OdN6//JcozMDapXSD18kUe8Z8XgL8dVDJFK7w3ahzQKZokjrTjVIa(String)
+2021-03-11 16:50:51,013 DEBUG [http-nio-8080-exec-2] [c.d.d.m.U.insertUser                    :137 ] <==    Updates: 1
