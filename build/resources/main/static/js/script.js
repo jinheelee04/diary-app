@@ -6,7 +6,7 @@ $('.mail-choice').change(function() {
   }
 });
 
-const colorInput = document.getElementById("colorpicker");
+const colorInput = $("#colorpicker");
 
 colorInput.addEventListener("input", (e) => {
  document.body.style.setProperty("--button-color", e.target.value);

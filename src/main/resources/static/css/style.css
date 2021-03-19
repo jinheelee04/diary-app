@@ -68,7 +68,7 @@ img {
   line-height: 70px;
   position: sticky;
   top: 0;
-  z-index: 3;
+  z-index: 0;
   text-transform: uppercase;
   background-color: var(--theme-bg-color);
   border-bottom: 1px solid var(--border-color);
@@ -218,7 +218,7 @@ img {
   display: inline-block;
   position: relative;
   left: -7px;
-  top: -25px;
+  top: -19px;
 }
 .project-department {
   position: relative;
@@ -227,7 +227,7 @@ img {
   color: var(--main-color);
   font-size: 13px;
   font-weight: 600;
-  margin-top: 14px;
+  margin-top: 13px;
 }
 .project-department:before {
   position: absolute;
@@ -238,10 +238,10 @@ img {
   top: 10;
   left: 0;
 }
-.project-department:nth-child(1):before {
-  border: 3px solid #b36dfb;
+.project-department:before {
+  border: 3px solid #fc6679;
 }
-.project-department:nth-child(2):before {
+/*.project-department:nth-child(odd):before {
   border: 3px solid #625be8;
 }
 .project-department:nth-child(3):before {
@@ -249,7 +249,7 @@ img {
 }
 .project-department:nth-child(4):before {
   border: 3px solid #fc6679;
-}
+}*/
 
 .members {
   width: 36px;
@@ -441,11 +441,12 @@ img {
 }
 
 .mail-detail {
-  display: flex;
-  animation: slideX 0.6s both;
-  flex-direction: column;
-  overflow: auto;
-  background-color: var(--theme-bg-color);
+   display: flex;
+    animation: slideX 0.6s both;
+    flex-direction: column;
+    overflow: auto;
+    background-color: var(--theme-bg-color);
+    width: 100%;
 }
 .mail-detail-profile {
   display: flex;
@@ -671,6 +672,7 @@ img {
   align-items: center;
   overflow: hidden;
   flex-shrink: 0;
+  z-index:0;
 }
 
 .layer {
@@ -994,6 +996,7 @@ img {
     width: 60px;
     height: 32px;
     font-size: 13px;
+    z-index:0;
 }
 .color-menu svg {
   position: absolute;
@@ -1135,14 +1138,22 @@ img {
 
 /*추가*/
 .plus {
-  width: 23px;
+    width: 33px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    height: 20px;
+    background: #ffe581;
+    border-radius: 30px;
+    display: flex;
+    position: relative;
+ /* width: 23px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   height: 23px;
   background: #ffe581;
   border-radius: 50%;
   display: flex;
-  position: relative;
+  position: relative;*/
 }
 .plus__line {
   width: 2.5px;
@@ -1171,6 +1182,7 @@ img {
   visibility: hidden;
   transition: 0.3s ease 0s;
   transform: scale(0.5);
+  font-weight:600;
 }
 .plus--active {
   height: 20px;
@@ -1197,11 +1209,37 @@ img {
   display: block;
   position: relative;
 /*  z-index: 999999999;*/
-  top: -13px;
-  left: 100%;
-  width:20px;
+  left: 91%;
+  width: 20px;
+  top:-12px;
 }
 .project-name {
   top: -15px;
   position: relative;
+}
+
+.diary-list-wrapper{
+    overflow-y: auto;
+    height: 300px;
+}
+
+.modal-x-btn{
+    top: -21px;
+    position: relative;
+}
+
+.mail {
+    padding-left: 12px;
+    font-size: 14px;
+    color: var(--main-light-color);
+}
+
+
+.posts-container{
+    display:none;
+    animation: slideX 0.9s both;
+    flex-direction: column;
+    background-color: var(--theme-bg-color);
+    width: 100%;
+    padding-top: 50px;
 }

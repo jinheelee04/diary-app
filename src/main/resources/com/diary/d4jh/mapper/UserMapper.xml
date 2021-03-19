@@ -21,4 +21,9 @@
         FROM T_USER_INFO
         WHERE email = #{email}
     </select>
+    <select id="findById" resultType="user">
+        SELECT *
+        FROM T_USER_INFO
+        WHERE user_id = #{userId}
+    </select>
 </mapper>

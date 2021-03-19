@@ -15,10 +15,14 @@ public class UserServiceImpl implements UserService {
 
     private final UserMapper userMapper;
 
-    @Override
     @Transactional
     public void save(User user) {
         userMapper.insertUser(user);
+    }
+
+    @Transactional(readOnly = true)
+    public User findUser(int userId) {
+        return userMapper.findById(userId);
     }
 
 }

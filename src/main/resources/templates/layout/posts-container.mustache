@@ -1,0 +1,38 @@
+<!--posts container start-->
+<div class="posts-container" style="padding-right:50px;">
+    <div class="col-md-12" style="text-align:right;">
+        <span id="selected-year"></span>년 <span id="selected-month"></span>월 <span id="selected-day"></span>일
+    </div>
+    <div class="col-md-4">
+        <!-- calendar-container start-->
+        <div class="posts-calendar-container">
+            <div class="header">
+                <a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
+                <div class="text" data-render="month-year"></div>
+                <a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
+            </div>
+            <div class="months" data-flow="left">
+                <div class="month month-a">
+                    <div class="render render-a"></div>
+                </div>
+                <div class="month month-b">
+                    <div class="render render-b"></div>
+                </div>
+            </div>
+        </div>
+        <!-- calendar-container end-->
+
+    </div>
+    <div class="col-md-8" >
+        <input type="text" class="form-control" placeholder="Title">
+        <div id="summernote"><p></p></div>
+        <div class="add-task">
+            <!-- <button class="add-button" onclick="" style="background: var(--main-light-color);">취소</button> -->
+            <button class="add-button" onclick="">작성 완료</button>
+        </div>
+    </div>
+</div>
+<!--posts container end-->
+
+
+

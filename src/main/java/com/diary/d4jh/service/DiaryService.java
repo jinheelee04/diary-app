@@ -1,5 +1,6 @@
 package com.diary.d4jh.service;
 
+import com.diary.d4jh.domain.user.User;
 import com.diary.d4jh.web.dto.request.DiaryCreateRequestDto;
 import com.diary.d4jh.web.dto.response.DiaryListResponseDto;
 

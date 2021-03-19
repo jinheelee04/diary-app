@@ -32,6 +32,7 @@ public class LoginController {
     @GetMapping({"/user/index","/"})
     public String index(Model model, Principal principal) {
         int userId= Integer.parseInt(principal.getName());
+        model.addAttribute("user", userService.findUser(userId));
         model.addAttribute("diaryList", diaryService.findAllUserDiary(userId) );
         return "index";
     }

@@ -10,4 +10,6 @@ public interface UserMapper {
     public int insertUser(User user);
 
     public User findByEmail(String email);
+
+    public User findById(int userId);
 }

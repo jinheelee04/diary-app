@@ -1,11 +1,14 @@
 $(function(){
 
-    if(!$("#input-chk-prvt").is("checked")){
-        console.log("요기기");
-       $("div.add-members").show();
-        $(this).val("N");
-    }else{
-    console.log("요기기22");
-           $("div.add-members").hide();
-    }
+    $("input:checkbox#input-chk-prvt").on('click', function() {
+        if ( $(this).prop('checked') ) {
+            $("div.add-members").hide();
+            $(this).val("Y");
+        }
+        else {
+            $("div.add-members").show();
+            $(this).val("N");
+        }
+    });
+
 });

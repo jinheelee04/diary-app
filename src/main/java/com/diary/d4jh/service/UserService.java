@@ -7,5 +7,6 @@ public interface UserService  {
 
     public void save(User user);
 
-//    public UserDetails loadUserByUsername(String username);
+    public User findUser(int userId);
+
 }
